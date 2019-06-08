@@ -1,13 +1,12 @@
 {
   "name": "clear-youtube-suffix",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "author": {
-    "name": "Beeno Tung",
-    "email": "aabbcc1241@yahoo.com.hk",
-    "url": "https://beeno-tung.surge.sh"
-  },
+  "description": "Remove formatting suffix in filename when download video from jDownloader",
+  "keywords": [
+    "cli",
+    "tool"
+  ],
+  "author": "Beeno Tung <aabbcc1241@yahoo.com.hk> (https://beeno-tung.surge.sh)",
   "license": "BSD-2-Clause",
   "bin": {
     "clear-youtube-suffix": "dist/cli.js"
@@ -43,5 +42,13 @@
     "tslint": "^5.17.0",
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/clear-youtube-suffix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beenotung/clear-youtube-suffix/issues"
+  },
+  "homepage": "https://github.com/beenotung/clear-youtube-suffix#readme"
 }
