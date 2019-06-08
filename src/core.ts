@@ -1,10 +1,15 @@
 import { exist, rename, scanRecursively } from '@beenotung/tslib/fs';
 import * as path from 'path';
 
-export async function main(entryPath: string, dryRun: boolean) {
+export async function main(args: {
+  entryPath: string;
+  dryRun: boolean;
+  dereferenceSymbolicLinks: boolean;
+}) {
+  const { entryPath, dryRun, dereferenceSymbolicLinks } = args;
   return scanRecursively({
     entryPath,
-    dereferenceSymbolicLinks: true,
+    dereferenceSymbolicLinks,
     onFile: async (filename, basename) => {
       if (!basename.includes('kbit')) {
         return;
